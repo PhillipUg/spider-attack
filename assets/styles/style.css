@@ -1,0 +1,37 @@
+body {
+  max-width: 98vw;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+p {
+  padding: 3px;
+}
+
+.how-to, p:nth-child(2) {
+  background-color: rgb(71, 203, 255);
+}
+
+.how-to {
+  font-weight: 700;
+  border: 1px solid silver;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 3px;
+  width: max-content;
+  border-color: #000;
+}
+
+.rules {
+  font-size: 20px;
+  text-align: center;
+  padding: 3px;
+}
+
+.to-win {
+  background-color: black;
+  color: red;
+}
