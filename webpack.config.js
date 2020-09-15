@@ -8,8 +8,8 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'app.bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
   },
 
   module: {
@@ -26,7 +26,6 @@ module.exports = {
       },
     ],
   },
-
 
   plugins: [
     new CopyWebpackPlugin([
