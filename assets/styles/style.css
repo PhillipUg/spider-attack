@@ -1,21 +1,17 @@
 body {
-  max-width: 98vw;
-  min-height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-direction: column-reverse;
+  overflow: hidden;
+  background-color: rgb(15, 3, 27);
 }
 
 p {
-  padding: 3px;
-}
-
-.how-to, p:nth-child(2) {
+  padding: 20px;
   background-color: rgb(71, 203, 255);
 }
 
-.how-to {
+.title {
   font-weight: 700;
   border: 1px solid silver;
   font-size: 22px;
@@ -25,13 +21,23 @@ p {
   border-color: #000;
 }
 
-.rules {
+.info {
   font-size: 20px;
   text-align: center;
-  padding: 3px;
+  padding: 30px;
+  width: 26vw;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.to-win {
-  background-color: black;
-  color: red;
+.lastp {
+  font-weight: bold;
+  text-shadow: #000 0.5px 1px;
+}
+
+div {
+  margin-left: 30vw;
+}
+
+input {
+  margin-top: 35px;
 }
