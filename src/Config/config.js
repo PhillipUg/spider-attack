@@ -16,7 +16,7 @@ export default {
       },
     ],
   },
-  width: 480,
+  width: 700,
   height: 640,
   pixelArt: true,
   physics: {
