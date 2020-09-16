@@ -71,10 +71,10 @@ For each spider you shoot, 50 points will be added to your score. In the end, yo
 ## How to play
 When the game first starts;
 * A dialogue box shows up requesting you to enter your name.
-* After you enter your name and click submit, it takes you to another screen with two buttons, `play` and `credits`.
-* Click play to start the game.
-* To play, all you need to do is point with your cursor and right click to shoot.
-* Everytime you hover the game screen, the player changes direction following where you move the cursor pointer.
+* After you enter your name and click `submit`, it takes you to another screen with two buttons, `play` and `credits`.
+* Click `play` to start the game.
+* To play, all you need to do is point with your cursor and `right-click` to shoot.
+* Everytime you `hover` the game screen, the player changes direction following where you move the cursor pointer.
 
 
 ## Installation
