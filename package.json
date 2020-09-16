@@ -7,8 +7,7 @@
     "test": "jest",
     "lint": "npx eslint . --fix && npx stylelint **/*.css --fix",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --config webpack.config.js --open",
-    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "start": "webpack-dev-server --config webpack.config.js --open"
   },
   "repository": {
     "type": "git",
