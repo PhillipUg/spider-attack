@@ -1,17 +1,17 @@
 {
-  "name": "shooter-game",
+  "name": "spider-attack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "lint": "npx eslint . --fix && npx stylelint **/*.css --fix",
-    "build": "webpack-dev-server --mode production --open",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --config webpack.config.js --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PhillipUg/shooter-game.git"
+    "url": "git+https://github.com/PhillipUg/spider-attack.git"
   },
   "keywords": [],
   "author": "phillip musiime <phillipmusiime@gmail.com>",
@@ -52,7 +52,7 @@
     "socket.io": "^1.7.3"
   },
   "bugs": {
-    "url": "https://github.com/PhillipUg/shooter-game/issues"
+    "url": "https://github.com/PhillipUg/spider-attack/issues"
   },
-  "homepage": "https://github.com/PhillipUg/shooter-game#readme"
+  "homepage": "https://github.com/PhillipUg/spider-attack#readme"
 }
