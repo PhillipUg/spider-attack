@@ -22,6 +22,7 @@ export default class CreditsScene extends Phaser.Scene {
     );
 
     this.madeByText.setY(1000);
+    /*eslint-disable */
 
     this.creditsTween = this.tweens.add({
       targets: this.creditsText,
@@ -45,5 +46,6 @@ export default class CreditsScene extends Phaser.Scene {
         this.scene.start('Title');
       }.bind(this),
     });
+    /* eslint-enable */
   }
 }

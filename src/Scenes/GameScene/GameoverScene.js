@@ -3,7 +3,6 @@ import config from '../../Config/config';
 import Button from '../../Objects/Button';
 import 'regenerator-runtime';
 
-
 function updatePanel(panel, content) {
   const sizer = panel.getElement('panel');
   const { scene } = panel;
@@ -131,11 +130,14 @@ export default class GameOverScene extends Phaser.Scene {
       }
     });
 
-
     let output = 'LEADERBOARD \n \n Scroll the board to see more scores \n \n';
+
+    /* eslint-disable */
+
     for (const el in answer) {
       output += `${el} ${answer[el]} \n`;
     }
+    /* eslint-enable */
 
     updatePanel(scrollablePanel, output);
 

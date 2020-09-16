@@ -42,7 +42,7 @@ function CreateLoginDialog(scene, config) {
   })
     .setInteractive()
     .on('pointerdown', () => {
-      loginDialog.emit('login', username);
+      loginDialog.emit('login', username); /* eslint-disable-line */
     });
 
   const loginDialog = scene.rexUI.add.sizer({
@@ -59,7 +59,6 @@ function CreateLoginDialog(scene, config) {
     .add(userNameField, 0, 'top', { bottom: 10, left: 10, right: 10 }, true)
     .add(loginButton, 0, 'center', { bottom: 10, left: 10, right: 10 }, false)
     .layout();
-
 
   return loginDialog;
 }
@@ -88,7 +87,7 @@ export default class PlayerDetails extends Phaser.Scene {
     const print = this.make.text({
       x: width / 2,
       y: height / 2 - 50,
-      text: "SPIDER ATTACK",
+      text: 'SPIDER ATTACK',
       style: {
         font: '900 50px monospace',
         fill: 'black',

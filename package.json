@@ -44,12 +44,10 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "express": "^4.15.2",
     "node-fetch": "^2.6.0",
     "phaser": "^3.22.0",
     "phaser3-rex-plugins": "^1.1.13",
-    "regenerator-runtime": "^0.13.5",
-    "socket.io": "^1.7.3"
+    "regenerator-runtime": "^0.13.5"
   },
   "bugs": {
     "url": "https://github.com/PhillipUg/spider-attack/issues"

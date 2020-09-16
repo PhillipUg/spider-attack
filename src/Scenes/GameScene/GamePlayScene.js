@@ -1,4 +1,4 @@
-import Phaser from 'phaser';
+import Phaser from 'phaser'; /* eslint-disable-line */
 import Userdetails from '../../modules/scoreBoard';
 
 class Entity extends Phaser.GameObjects.Sprite {
@@ -29,20 +29,17 @@ class Entity extends Phaser.GameObjects.Sprite {
   }
 }
 
-
 class Spider extends Entity {
   constructor(scene, x, y) {
     super(scene, x, y, 'sprEnemy2');
   }
 }
 
-
 export default class GamePlayScene extends Phaser.Scene {
   constructor() {
     super('Game');
     this.bullets1 = '';
   }
-
 
   preload() {
     this.load.image('background', '../assets/content/bg.jpg');
@@ -78,7 +75,6 @@ export default class GamePlayScene extends Phaser.Scene {
       ],
       laser: this.sound.add('sndLaser'),
     };
-
 
     this.isClicked = false;
     this.mouseX = 0;
@@ -168,20 +164,18 @@ export default class GamePlayScene extends Phaser.Scene {
       },
     });
 
-
     this.time.addEvent({
-      delay: 1000,
+      delay: 500,
       callback() {
         const enemy = new Spider(
           this,
-          Phaser.Math.Between(10, 700),
-          Phaser.Math.Between(10, 600),
+          Phaser.Math.Between(10, 690),
+          Phaser.Math.Between(10, 630),
         );
 
         if (enemy != null) {
           enemy.setScale(2.5);
           this.enemies.add(enemy);
-
         }
       },
       callbackScope: this,

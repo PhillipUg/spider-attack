@@ -18,7 +18,7 @@ export default class TitleScene extends Phaser.Scene {
     const loadingText = this.make.text({
       x: width / 2,
       y: height / 2 - 50,
-      text: "SPIDER ATTACK",
+      text: 'SPIDER ATTACK',
       style: {
         font: '800 50px monospace',
         fill: 'black',
@@ -28,7 +28,6 @@ export default class TitleScene extends Phaser.Scene {
       },
     });
     loadingText.setOrigin(0.5, 3.5);
-
 
     this.gameButton = new Button(this, config.width / 2, config.height / 2 - 100, 'blueButton1', 'blueButton2', 'Play', 'Game');
 
@@ -51,11 +50,12 @@ export default class TitleScene extends Phaser.Scene {
       ),
     );
   }
-
+  /*eslint-disable */
   centerButtonText(gameText, gameButton) {
     Phaser.Display.Align.In.Center(
       gameText,
       gameButton,
     );
   }
+  /* eslint-enable */
 }
