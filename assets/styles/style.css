@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(15, 3, 27);
+}
+
+p {
+  padding: 20px;
+  background-color: rgb(71, 203, 255);
+}
+
+.title {
+  font-weight: 700;
+  border: 1px solid silver;
+  font-size: 22px;
+  border-radius: 5px;
+  padding: 3px;
+  width: max-content;
+  border-color: #000;
+}
+
+.info {
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  width: 26vw;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.lastp {
+  font-weight: bold;
+  text-shadow: #000 0.5px 1px;
+}
+
+div {
+  margin-left: 30vw;
+}
+
+input {
+  margin-top: 35px;
+}
