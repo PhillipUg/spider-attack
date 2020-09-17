@@ -1,39 +1,6 @@
 import Phaser from 'phaser'; /* eslint-disable-line */
 import Userdetails from '../../modules/scoreBoard';
-
-class Entity extends Phaser.GameObjects.Sprite {
-  constructor(scene, x, y, key) {
-    super(scene, x, y, key);
-
-    this.scene = scene;
-    this.scene.add.existing(this);
-    this.scene.physics.world.enableBody(this, 0);
-    this.setData('isDead', false);
-  }
-
-  explode(score, scoreText) {
-    if (!this.getData('isDead')) {
-      this.setTexture('sprExplosion');
-      this.play('sprExplosion');
-      this.scene.sfx.explosions[Phaser.Math.Between(
-        0, this.scene.sfx.explosions.length - 1,
-      )].play();
-
-      this.on('animationcomplete', function playIt() {
-        this.destroy();
-        score.increaseScore();
-        scoreText.setText(score.getScore());
-      }, this);
-      this.setData('isDead', true);
-    }
-  }
-}
-
-class Spider extends Entity {
-  constructor(scene, x, y) {
-    super(scene, x, y, 'sprEnemy2');
-  }
-}
+import Spider from './Spider';
 
 export default class GamePlayScene extends Phaser.Scene {
   constructor() {
@@ -198,7 +165,7 @@ export default class GamePlayScene extends Phaser.Scene {
           this.ship.setTexture('sprExplosion');
           this.ship.play('sprExplosion');
           this.sfx.explosions[Phaser.Math.Between(0, this.sfx.explosions.length - 1)].play();
-          this.ship.on('animationcomplete', function playThat() {
+          this.ship.on('animationcomplete', () => {
             this.ship.destroy();
             this.scene.start('GameOver');
           }, this);
