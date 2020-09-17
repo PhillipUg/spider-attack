@@ -1,4 +1,4 @@
-/*eslint-disable */
+/* eslint-disable */
 import LeaderBoard from '../src/modules/leaderboard';
 
 jest.mock('../src/modules/leaderboard');
@@ -50,4 +50,5 @@ describe('Testing out the leaderboard API endpoints', () => {
   });
 
 });
+
 /* eslint-enable */
