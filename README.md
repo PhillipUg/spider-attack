@@ -48,6 +48,7 @@ This is a shooting video game built with Javascript and the game engine [Phaser]
 * [Installation](#installation)
 * [Built With](#built-with)
 * [Live Version](#live-version)
+* [Game Design](#game-design)
 * [Future Updates](#future-updates)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -106,6 +107,49 @@ This project was built using these technologies.
 ## Live Version
 To try it live [click here](https://spider-attack.netlify.app/)
 
+
+## Game Design
+The game uses a number of sprites to bring all the scenes to life. User can expect well-designed animations and map textures. Some of the sprites used include;
+
+### Captain Jack
+<p><img src="assets/content/ship.png" alt="Logo" width="140" height="150"></p>
+
+- Role: Main Character
+- Health: 100
+- Damage: 100
+
+### Spider
+<p><img src="assets/content/sprEnemy2.png" alt="Logo" width="150" height="150"></p>
+
+- Role: Enemy
+- Health: 100
+- Damage: 100
+
+### Bullet
+<p><img src="assets/content/bullet11.png" alt="Logo" width="150" height="20"></p>
+
+- Role: Captain Jack Weapon
+- Damage: 100
+
+### Explosion
+<p><img src="assets/content/sprExplosion.png" alt="Logo" width="150" height="30"></p>
+
+- Role: Spider Explosion
+
+
+### Welcome Screen
+![Product Name Screen Shot][form]
+
+### Start Game
+![Product Name Screen Shot][start]
+
+### Credits
+![Product Name Screen Shot][credits]
+
+### LeaderBoard & Reload
+![Product Name Screen Shot][leader]
+
+
 ## Future Updates
 * Add a health bar
 * Make the spiders move towards the player at the center
@@ -142,6 +186,10 @@ To try it live [click here](https://spider-attack.netlify.app/)
 [issues-shield]: https://img.shields.io/github/issues/PhillipUg/spider-attack.svg?style=flat-square
 [issues-url]: https://github.com/PhillipUg/spider-attack/issues
 [product-screenshot]: assets/content/spider-attack.gif
+[credits]: assets/content/credits.gif
+[form]: assets/content/form.png
+[leader]: assets/content/leader.png
+[start]: assets/content/start.png
 <!-- [product-screenshot2]: dist/images/page2.png -->
 
 
