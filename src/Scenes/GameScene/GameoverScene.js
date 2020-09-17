@@ -134,8 +134,18 @@ export default class GameOverScene extends Phaser.Scene {
 
     /* eslint-disable */
 
-    for (const el in answer) {
-      output += `${el} ${answer[el]} \n`;
+    var firstN = 15;
+    // var o = { a: 7, b: 8, c: 9 };
+    var filteredResult = {};
+
+    for (var index = 0; index < firstN; index++) {
+      var key = Object.keys(answer)[index];
+      filteredResult[key] = answer[key];
+    }
+
+    console.log(filteredResult)
+    for (const el in filteredResult) {
+      output += `${el} - ${filteredResult[el]} \n`;
     }
     /* eslint-enable */
 
