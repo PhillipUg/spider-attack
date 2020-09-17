@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */
+
 import LeaderBoard from '../src/modules/leaderboard';
 
 jest.mock('../src/modules/leaderboard');
