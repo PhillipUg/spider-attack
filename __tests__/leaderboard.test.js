@@ -43,13 +43,9 @@ describe('Testing out the leaderboard API endpoints', () => {
   });
 
   it('returns empty array if no score', async () => {
-    board.getBoard.mockResolvedValue({
-      result: [],
-    });
+    board.getBoard.mockResolvedValue({ result: [] });
     const recievedScore = await board.getBoard();
 
-    expect(recievedScore).toEqual({
-      result: []
-    });
+    expect(recievedScore).toEqual({ result: [] });
   });
 });
