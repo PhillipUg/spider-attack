@@ -3,7 +3,7 @@ import config from '../../Config/config';
 import Button from '../../Objects/Button';
 import 'regenerator-runtime';
 
-function updatePanel(panel, content) {
+const updatePanel = (panel, content) => {
   const sizer = panel.getElement('panel');
   const { scene } = panel;
 
@@ -17,7 +17,7 @@ function updatePanel(panel, content) {
           fontSize: 28,
         })
           .setInteractive()
-          .on('pointerdown', function playThis() {
+          .on('pointerdown', () => {
             this.scene.print.text = this.text;
             this.setTint(Phaser.Math.Between(0, 0xffffff));
           }),
@@ -30,7 +30,7 @@ function updatePanel(panel, content) {
 
   panel.layout();
   return panel;
-}
+};
 
 export default class GameOverScene extends Phaser.Scene {
   constructor() {
