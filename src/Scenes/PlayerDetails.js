@@ -5,7 +5,7 @@ const COLOR_PRIMARY = 0x4e342e;
 const COLOR_LIGHT = 0x7b5e57;
 
 const { GetValue } = Phaser.Utils.Objects;
-function CreateLoginDialog(scene, config) {
+const CreateLoginDialog = (scene, config) => {
   let username = GetValue(config, 'username', '');
   const title = GetValue(config, 'title');
   const x = GetValue(config, 'x', 0);
@@ -61,7 +61,7 @@ function CreateLoginDialog(scene, config) {
     .layout();
 
   return loginDialog;
-}
+};
 
 export default class PlayerDetails extends Phaser.Scene {
   constructor() {
