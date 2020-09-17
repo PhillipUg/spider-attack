@@ -50,4 +50,4 @@ describe('Testing out the leaderboard API endpoints', () => {
   });
 
 });
-/*eslint-enable */
+/* eslint-enable */
