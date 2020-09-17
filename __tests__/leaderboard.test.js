@@ -41,11 +41,13 @@ describe('Testing out the leaderboard API endpoints', () => {
       ],
     });
   });
-
+  /*eslint-disable */
   it('returns empty array if no score', async () => {
     board.getBoard.mockResolvedValue({ result: [] });
     const recievedScore = await board.getBoard();
 
     expect(recievedScore).toEqual({ result: [] });
   });
+  /*eslint-enable */
+
 });
